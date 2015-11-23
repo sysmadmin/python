@@ -1,0 +1,10 @@
+import random
+
+word = input('What word? ')
+
+wordList = list(word[1:-1])
+random.shuffle(wordList)
+wordGuts = ''.join(wordList)
+newWord = word[0] + wordGuts + word[-1]
+
+print(newWord)
