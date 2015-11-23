@@ -1,0 +1,12 @@
+import random
+
+i = 0
+treeHeight = 10
+treeBody = 10
+while i < treeHeight:
+    print((' ' * treeBody) + str(random.randrange(0, 2)) + (str(random.randrange(0, 2)) * (i*2)) + str(random.randrange(0, 2)))
+    i += 1
+    treeBody -= 1
+trunk = int(treeHeight - 1)
+print(' ' * trunk + '10')
+print(' ' * trunk + '01')
